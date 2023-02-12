@@ -1,0 +1,55 @@
+\hypertarget{classstate__decision__maker_1_1wait__map}{}\doxysection{state\+\_\+decision\+\_\+maker.\+wait\+\_\+map Class Reference}
+\label{classstate__decision__maker_1_1wait__map}\index{state\_decision\_maker.wait\_map@{state\_decision\_maker.wait\_map}}
+
+
+Inheritance diagram for state\+\_\+decision\+\_\+maker.\+wait\+\_\+map\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classstate__decision__maker_1_1wait__map__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for state\+\_\+decision\+\_\+maker.\+wait\+\_\+map\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classstate__decision__maker_1_1wait__map__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1wait__map_a8a638ea618389a78218815e1e26fdbb4}\label{classstate__decision__maker_1_1wait__map_a8a638ea618389a78218815e1e26fdbb4}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, DM)
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1wait__map_add702f9771157e9b1398a0021d10784b}\label{classstate__decision__maker_1_1wait__map_add702f9771157e9b1398a0021d10784b}} 
+def {\bfseries build\+\_\+map} (self)
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1wait__map_abe1e83a28505a574e07514cb6120c8a2}\label{classstate__decision__maker_1_1wait__map_abe1e83a28505a574e07514cb6120c8a2}} 
+def {\bfseries execute} (self, userdata)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1wait__map_a46be218a274320a8557f8c4b85472b88}\label{classstate__decision__maker_1_1wait__map_a46be218a274320a8557f8c4b85472b88}} 
+{\bfseries dm}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class for smach to represent the initial state of the robot, which is waiting for everything get ready.
+The only action this state can take is to let the robot start working.
+
+Methods -------
+execute()
+this function will wait topological-map get ready, then ask Decision-maker where the robot should go next, then go there.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{state__decision__maker_8py}{state\+\_\+decision\+\_\+maker.\+py}}\end{DoxyCompactItemize}

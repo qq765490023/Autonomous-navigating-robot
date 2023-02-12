@@ -1,0 +1,11 @@
+####### Tell real robot the location to go
+
+### location to go
+float32 x
+float32 y
+---
+
+### Service output
+
+# Return if succeeded
+bool succeeded 

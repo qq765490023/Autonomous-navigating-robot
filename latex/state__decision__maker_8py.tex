@@ -1,0 +1,65 @@
+\hypertarget{state__decision__maker_8py}{}\doxysection{state\+\_\+decision\+\_\+maker.\+py File Reference}
+\label{state__decision__maker_8py}\index{state\_decision\_maker.py@{state\_decision\_maker.py}}
+
+
+This is the state-\/decision-\/maker module of E\+RL assignment robot\+\_\+visit project.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classstate__decision__maker_1_1decision__maker}{state\+\_\+decision\+\_\+maker.\+decision\+\_\+maker}}
+\item 
+class \mbox{\hyperlink{classstate__decision__maker_1_1wait__map}{state\+\_\+decision\+\_\+maker.\+wait\+\_\+map}}
+\item 
+class \mbox{\hyperlink{classstate__decision__maker_1_1wander}{state\+\_\+decision\+\_\+maker.\+wander}}
+\item 
+class \mbox{\hyperlink{classstate__decision__maker_1_1checking}{state\+\_\+decision\+\_\+maker.\+checking}}
+\item 
+class \mbox{\hyperlink{classstate__decision__maker_1_1charging}{state\+\_\+decision\+\_\+maker.\+charging}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{state__decision__maker_8py_a1e381fe44c0915d39cf9e9afa6a7235e}{state\+\_\+decision\+\_\+maker.\+main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{state__decision__maker_8py_ada7cd95d5352bd04c041185871a07cec}\label{state__decision__maker_8py_ada7cd95d5352bd04c041185871a07cec}} 
+int {\bfseries state\+\_\+decision\+\_\+maker.\+C\+H\+A\+R\+G\+I\+N\+G\+\_\+\+T\+I\+ME} = 5
+\item 
+\mbox{\Hypertarget{state__decision__maker_8py_a858fde97a1b9f8969eff6398307e9537}\label{state__decision__maker_8py_a858fde97a1b9f8969eff6398307e9537}} 
+int {\bfseries state\+\_\+decision\+\_\+maker.\+D\+E\+L\+A\+Y\+\_\+\+T\+I\+ME} = 2
+\item 
+\mbox{\Hypertarget{state__decision__maker_8py_a21404b8ad2eb3b3429d5e095115f1e10}\label{state__decision__maker_8py_a21404b8ad2eb3b3429d5e095115f1e10}} 
+def {\bfseries state\+\_\+decision\+\_\+maker.\+server} = main()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the state-\/decision-\/maker module of E\+RL assignment robot\+\_\+visit project. 
+
+\begin{DoxyAuthor}{Author}
+Zhouyang Hong 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+22/11/2022
+\end{DoxyDate}
+Node\+: /state\+\_\+decision\+\_\+maker Subscribes to\+: state/battery Subscribes to\+: state/control Subscribes to\+: state/charge Client of service\+: move 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{state__decision__maker_8py_a1e381fe44c0915d39cf9e9afa6a7235e}\label{state__decision__maker_8py_a1e381fe44c0915d39cf9e9afa6a7235e}} 
+\index{state\_decision\_maker.py@{state\_decision\_maker.py}!main@{main}}
+\index{main@{main}!state\_decision\_maker.py@{state\_decision\_maker.py}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def state\+\_\+decision\+\_\+maker.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Main function
+This function will create state-machine, while pass object Decision-Maker as parameter into it.
+Before everything get started, this function will wait ARMOR service and the service to move the robot.\end{DoxyVerb}
+ ~\newline
+ 

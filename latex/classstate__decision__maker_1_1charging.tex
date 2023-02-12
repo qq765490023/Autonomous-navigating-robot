@@ -1,0 +1,57 @@
+\hypertarget{classstate__decision__maker_1_1charging}{}\doxysection{state\+\_\+decision\+\_\+maker.\+charging Class Reference}
+\label{classstate__decision__maker_1_1charging}\index{state\_decision\_maker.charging@{state\_decision\_maker.charging}}
+
+
+Inheritance diagram for state\+\_\+decision\+\_\+maker.\+charging\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classstate__decision__maker_1_1charging__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for state\+\_\+decision\+\_\+maker.\+charging\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classstate__decision__maker_1_1charging__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1charging_a91080ed770cb656b9d3e0df19f695086}\label{classstate__decision__maker_1_1charging_a91080ed770cb656b9d3e0df19f695086}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, DM)
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1charging_ad9b6c991f38d12ee07e474e9b30643b0}\label{classstate__decision__maker_1_1charging_ad9b6c991f38d12ee07e474e9b30643b0}} 
+def {\bfseries execute} (self, userdata)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1charging_a5dd9902c0cb71c348bd921ccb42c8506}\label{classstate__decision__maker_1_1charging_a5dd9902c0cb71c348bd921ccb42c8506}} 
+{\bfseries dm}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1charging_abe41bb34c13322169764ac22c4eb84c7}\label{classstate__decision__maker_1_1charging_abe41bb34c13322169764ac22c4eb84c7}} 
+{\bfseries Bat\+\_\+pub}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class for smach to represent the robot is now charging its battery 
+The following action is "restart", which represents the robot go back to work again.
+
+Methods -------
+execute()
+After entering this state, this function will ask Decision-maker where the robot should go next,
+then go. Also this function will publish message to the manager of the battery to begin charge itself, 
+then wait until fully charged. 
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{state__decision__maker_8py}{state\+\_\+decision\+\_\+maker.\+py}}\end{DoxyCompactItemize}

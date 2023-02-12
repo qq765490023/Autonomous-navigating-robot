@@ -1,0 +1,109 @@
+\hypertarget{classmove_1_1_move__manager}{}\doxysection{move.\+Move\+\_\+manager Class Reference}
+\label{classmove_1_1_move__manager}\index{move.Move\_manager@{move.Move\_manager}}
+
+
+Inheritance diagram for move.\+Move\+\_\+manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classmove_1_1_move__manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for move.\+Move\+\_\+manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classmove_1_1_move__manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmove_1_1_move__manager_a6143ded0b166df399b8e6c9451555638}\label{classmove_1_1_move__manager_a6143ded0b166df399b8e6c9451555638}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classmove_1_1_move__manager_aeb52115f5a2a393eb82caf04b5d69723}{room\+\_\+scan}} (self)
+\item 
+\mbox{\Hypertarget{classmove_1_1_move__manager_a065537ed39048d350081961427e6dc7c}\label{classmove_1_1_move__manager_a065537ed39048d350081961427e6dc7c}} 
+def {\bfseries callback\+\_\+scan} (self, msg)
+\item 
+\mbox{\Hypertarget{classmove_1_1_move__manager_a65bbf994e95070fb24b52389e260eea8}\label{classmove_1_1_move__manager_a65bbf994e95070fb24b52389e260eea8}} 
+def {\bfseries mov\+\_\+goal} (self, x, y)
+\item 
+\mbox{\Hypertarget{classmove_1_1_move__manager_ae527fe7fc668946044a8e0b71ba3e39a}\label{classmove_1_1_move__manager_ae527fe7fc668946044a8e0b71ba3e39a}} 
+def {\bfseries execute\+\_\+callback} (self, msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmove_1_1_move__manager_a2f3017bc39f51d69b7bbe03c1e7d01e2}\label{classmove_1_1_move__manager_a2f3017bc39f51d69b7bbe03c1e7d01e2}} 
+{\bfseries s}
+\item 
+\mbox{\Hypertarget{classmove_1_1_move__manager_aa7a8016d7e0033ba284d6b109ac58ac8}\label{classmove_1_1_move__manager_aa7a8016d7e0033ba284d6b109ac58ac8}} 
+{\bfseries joint1\+\_\+pose\+\_\+pub}
+\item 
+\mbox{\Hypertarget{classmove_1_1_move__manager_acdf63d92b55c63a731c231fd341ee5d8}\label{classmove_1_1_move__manager_acdf63d92b55c63a731c231fd341ee5d8}} 
+{\bfseries angel\+\_\+sub}
+\item 
+\mbox{\Hypertarget{classmove_1_1_move__manager_a87381a2fe10aafaf05a79ca1a40da0ba}\label{classmove_1_1_move__manager_a87381a2fe10aafaf05a79ca1a40da0ba}} 
+{\bfseries angle}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class used to physicially move the robot
+...
+Attributes ---------- 
+
+angle: float
+The current angle of joint1(rotation of cameara) 
+
+Methods -------
+execute_callback():
+This function will be called when required to move to target location.
+Here is just simply simulating this process by simply randomly wait an amount of time.
+
+Methods -------
+room_scan():
+This funtion will publish the desired angle of the cameara to move the robot to a desired angle.
+Methods -------
+
+mov_goal():
+This funtion will call action_server of move_base to move the robot to a target position.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmove_1_1_move__manager_aeb52115f5a2a393eb82caf04b5d69723}\label{classmove_1_1_move__manager_aeb52115f5a2a393eb82caf04b5d69723}} 
+\index{move.Move\_manager@{move.Move\_manager}!room\_scan@{room\_scan}}
+\index{room\_scan@{room\_scan}!move.Move\_manager@{move.Move\_manager}}
+\doxysubsubsection{\texorpdfstring{room\_scan()}{room\_scan()}}
+{\footnotesize\ttfamily def move.\+Move\+\_\+manager.\+room\+\_\+scan (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}"
+This function controls the commands passed to the joints. Joint 1 will rotate 360 degrees to scan the room."
+\end{DoxyVerb}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove_1_1_move__manager_aeb52115f5a2a393eb82caf04b5d69723_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classmove_1_1_move__manager_aeb52115f5a2a393eb82caf04b5d69723_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{move_8py}{move.\+py}}\end{DoxyCompactItemize}

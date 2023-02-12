@@ -1,0 +1,209 @@
+\hypertarget{classstate__decision__maker_1_1decision__maker}{}\doxysection{state\+\_\+decision\+\_\+maker.\+decision\+\_\+maker Class Reference}
+\label{classstate__decision__maker_1_1decision__maker}\index{state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classstate__decision__maker_1_1decision__maker_a57d9e0965fc86321bbba7ead734d8bbf}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classstate__decision__maker_1_1decision__maker_ade0be480029c8bf77933200886df8ce5}{map\+\_\+built\+\_\+callback}} (self, msg)
+\item 
+def \mbox{\hyperlink{classstate__decision__maker_1_1decision__maker_a51acbbb52a645c1cfae0ed8c290b2973}{battery\+\_\+callback}} (self, msg)
+\item 
+def \mbox{\hyperlink{classstate__decision__maker_1_1decision__maker_a49fee814ab23de02b4e6356e82dd9300}{control\+\_\+callback}} (self, msg)
+\item 
+def \mbox{\hyperlink{classstate__decision__maker_1_1decision__maker_afd823590103b2bcb91b659232ed32adc}{move}} (self, next\+\_\+v)
+\item 
+def \mbox{\hyperlink{classstate__decision__maker_1_1decision__maker_a99da4bab87667c92b7b00bf1c0673614}{update\+\_\+pos}} (self, next\+\_\+v)
+\item 
+def \mbox{\hyperlink{classstate__decision__maker_1_1decision__maker_a6ae709711c9da781da179626132befdd}{next\+\_\+go}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a42aa71f1297732e77fc5fee720b4c445}\label{classstate__decision__maker_1_1decision__maker_a42aa71f1297732e77fc5fee720b4c445}} 
+{\bfseries Control\+\_\+sub}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a5f2c2493120535715b535c8a5de8a5f2}\label{classstate__decision__maker_1_1decision__maker_a5f2c2493120535715b535c8a5de8a5f2}} 
+{\bfseries Battery\+\_\+sub}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_aa38e19fac1f2be87ae71c9906ced79b8}\label{classstate__decision__maker_1_1decision__maker_aa38e19fac1f2be87ae71c9906ced79b8}} 
+{\bfseries Map\+\_\+sub}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a8cc2273a28896efeff83090c0df8dce3}\label{classstate__decision__maker_1_1decision__maker_a8cc2273a28896efeff83090c0df8dce3}} 
+{\bfseries Charge\+\_\+pub}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a175c024b739de1de9e1408fdfc03cede}\label{classstate__decision__maker_1_1decision__maker_a175c024b739de1de9e1408fdfc03cede}} 
+{\bfseries battery\+\_\+low}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_affd0d9e41929efec5afb2616823ea86c}\label{classstate__decision__maker_1_1decision__maker_affd0d9e41929efec5afb2616823ea86c}} 
+{\bfseries go\+\_\+work}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a26d0ef2c12756662c38847209c56f6e8}\label{classstate__decision__maker_1_1decision__maker_a26d0ef2c12756662c38847209c56f6e8}} 
+{\bfseries battery\+\_\+capacity}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a31e5e59a7a8b22c6846c03ed8620df99}\label{classstate__decision__maker_1_1decision__maker_a31e5e59a7a8b22c6846c03ed8620df99}} 
+{\bfseries track}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a4664d4a6ea95fcbf4756d2b49c475f2a}\label{classstate__decision__maker_1_1decision__maker_a4664d4a6ea95fcbf4756d2b49c475f2a}} 
+{\bfseries map\+\_\+built}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_ac00e507bd0258d0a4b85b5939b466660}\label{classstate__decision__maker_1_1decision__maker_ac00e507bd0258d0a4b85b5939b466660}} 
+{\bfseries robot\+\_\+at}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_ac1479e1bf06921572851ad2f6f2713de}\label{classstate__decision__maker_1_1decision__maker_ac1479e1bf06921572851ad2f6f2713de}} 
+{\bfseries client}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a9c4f815022de256d49831d9720768a8a}\label{classstate__decision__maker_1_1decision__maker_a9c4f815022de256d49831d9720768a8a}} 
+{\bfseries queryclient}
+\item 
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_aa9fb4926f4022cca7bad77c7bd3d2143}\label{classstate__decision__maker_1_1decision__maker_aa9fb4926f4022cca7bad77c7bd3d2143}} 
+{\bfseries Move\+\_\+client}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class used to know where the robot should go next,  move the robot to that position, and also update topolical location
+
+...
+Attributes ---------- 
+
+onto_path : str
+Used to know the file location of Ontology file(not in use now). 
+
+battery_low: bool
+Used to know if robot has sufficient battery.
+
+go_work: bool
+Used to check if receiced the command from /control node
+
+battery_capacity: int
+Used to represent the current capacity of battery.
+
+track : str
+Used to show the history of locations that the robot visited.
+
+map_built: bool
+Used to know that the map is built.
+
+Methods -------
+
+update_pos(next_v):
+Update the current position [next_v] the robot to topological map.
+return true if succeeded
+
+
+move(next_v)
+Physically move the robot to location [next_v]
+return true if succeeded
+
+next_go():
+Returns the position the the robot should go next, and if no need wait(For urgent case).[location, no_wait]
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a57d9e0965fc86321bbba7ead734d8bbf}\label{classstate__decision__maker_1_1decision__maker_a57d9e0965fc86321bbba7ead734d8bbf}} 
+\index{state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def state\+\_\+decision\+\_\+maker.\+decision\+\_\+maker.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Constructor, initializes publisher, subscriber, and variables\end{DoxyVerb}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstate__decision__maker_1_1decision__maker_a57d9e0965fc86321bbba7ead734d8bbf_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a51acbbb52a645c1cfae0ed8c290b2973}\label{classstate__decision__maker_1_1decision__maker_a51acbbb52a645c1cfae0ed8c290b2973}} 
+\index{state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}!battery\_callback@{battery\_callback}}
+\index{battery\_callback@{battery\_callback}!state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}}
+\doxysubsubsection{\texorpdfstring{battery\_callback()}{battery\_callback()}}
+{\footnotesize\ttfamily def state\+\_\+decision\+\_\+maker.\+decision\+\_\+maker.\+battery\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A callback for acquiring the battery data\end{DoxyVerb}
+ Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstate__decision__maker_1_1decision__maker_a51acbbb52a645c1cfae0ed8c290b2973_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a49fee814ab23de02b4e6356e82dd9300}\label{classstate__decision__maker_1_1decision__maker_a49fee814ab23de02b4e6356e82dd9300}} 
+\index{state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}!control\_callback@{control\_callback}}
+\index{control\_callback@{control\_callback}!state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}}
+\doxysubsubsection{\texorpdfstring{control\_callback()}{control\_callback()}}
+{\footnotesize\ttfamily def state\+\_\+decision\+\_\+maker.\+decision\+\_\+maker.\+control\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A callback for receive control command from /control\end{DoxyVerb}
+ Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstate__decision__maker_1_1decision__maker_a49fee814ab23de02b4e6356e82dd9300_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_ade0be480029c8bf77933200886df8ce5}\label{classstate__decision__maker_1_1decision__maker_ade0be480029c8bf77933200886df8ce5}} 
+\index{state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}!map\_built\_callback@{map\_built\_callback}}
+\index{map\_built\_callback@{map\_built\_callback}!state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}}
+\doxysubsubsection{\texorpdfstring{map\_built\_callback()}{map\_built\_callback()}}
+{\footnotesize\ttfamily def state\+\_\+decision\+\_\+maker.\+decision\+\_\+maker.\+map\+\_\+built\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A callback for knowing the the topological map is built.\end{DoxyVerb}
+ Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstate__decision__maker_1_1decision__maker_ade0be480029c8bf77933200886df8ce5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_afd823590103b2bcb91b659232ed32adc}\label{classstate__decision__maker_1_1decision__maker_afd823590103b2bcb91b659232ed32adc}} 
+\index{state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}!move@{move}}
+\index{move@{move}!state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily def state\+\_\+decision\+\_\+maker.\+decision\+\_\+maker.\+move (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{next\+\_\+v }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}To call /move node to move the robot to target location\end{DoxyVerb}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstate__decision__maker_1_1decision__maker_afd823590103b2bcb91b659232ed32adc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a6ae709711c9da781da179626132befdd}\label{classstate__decision__maker_1_1decision__maker_a6ae709711c9da781da179626132befdd}} 
+\index{state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}!next\_go@{next\_go}}
+\index{next\_go@{next\_go}!state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}}
+\doxysubsubsection{\texorpdfstring{next\_go()}{next\_go()}}
+{\footnotesize\ttfamily def state\+\_\+decision\+\_\+maker.\+decision\+\_\+maker.\+next\+\_\+go (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the next location that the robot should visit next.  the vising strategy is planted here\end{DoxyVerb}
+ \mbox{\Hypertarget{classstate__decision__maker_1_1decision__maker_a99da4bab87667c92b7b00bf1c0673614}\label{classstate__decision__maker_1_1decision__maker_a99da4bab87667c92b7b00bf1c0673614}} 
+\index{state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}!update\_pos@{update\_pos}}
+\index{update\_pos@{update\_pos}!state\_decision\_maker.decision\_maker@{state\_decision\_maker.decision\_maker}}
+\doxysubsubsection{\texorpdfstring{update\_pos()}{update\_pos()}}
+{\footnotesize\ttfamily def state\+\_\+decision\+\_\+maker.\+decision\+\_\+maker.\+update\+\_\+pos (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{next\+\_\+v }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update new environment information to ARMOR. Called once the robot move to a new location.\end{DoxyVerb}
+ Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstate__decision__maker_1_1decision__maker_a99da4bab87667c92b7b00bf1c0673614_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{state__decision__maker_8py}{state\+\_\+decision\+\_\+maker.\+py}}\end{DoxyCompactItemize}

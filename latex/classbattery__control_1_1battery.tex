@@ -1,0 +1,119 @@
+\hypertarget{classbattery__control_1_1battery}{}\doxysection{battery\+\_\+control.\+battery Class Reference}
+\label{classbattery__control_1_1battery}\index{battery\_control.battery@{battery\_control.battery}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbattery__control_1_1battery_a64477268cf6fdbab8782091703d475ca}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classbattery__control_1_1battery_aa4ef257cbbe0dbe4aee4d39e1ab16c14}{charge\+\_\+call\+\_\+back}} (self, msg)
+\item 
+def \mbox{\hyperlink{classbattery__control_1_1battery_a36ace1714fad61b3e5d95400995e6b06}{control\+\_\+call\+\_\+back}} (self, msg)
+\item 
+def \mbox{\hyperlink{classbattery__control_1_1battery_a6207c8a2f67fd06952504509a4bcc83e}{run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbattery__control_1_1battery_a1ecdddd99af520eddb50f4e34d381d65}\label{classbattery__control_1_1battery_a1ecdddd99af520eddb50f4e34d381d65}} 
+{\bfseries publisher}
+\item 
+\mbox{\Hypertarget{classbattery__control_1_1battery_a81cbc674ef81b5f6bf9072624f8e3e23}\label{classbattery__control_1_1battery_a81cbc674ef81b5f6bf9072624f8e3e23}} 
+{\bfseries charge\+\_\+subscriber}
+\item 
+\mbox{\Hypertarget{classbattery__control_1_1battery_a8ba2ed29284f075c7acbc7c51cae1105}\label{classbattery__control_1_1battery_a8ba2ed29284f075c7acbc7c51cae1105}} 
+{\bfseries charging}
+\item 
+\mbox{\Hypertarget{classbattery__control_1_1battery_a574d1e0267c299c407dfad37e8a3da6c}\label{classbattery__control_1_1battery_a574d1e0267c299c407dfad37e8a3da6c}} 
+{\bfseries capacity}
+\item 
+\mbox{\Hypertarget{classbattery__control_1_1battery_acc3bb82aa473c9865a4e31513fee09bf}\label{classbattery__control_1_1battery_acc3bb82aa473c9865a4e31513fee09bf}} 
+{\bfseries battery\+\_\+msg}
+\item 
+\mbox{\Hypertarget{classbattery__control_1_1battery_a50811a8f0a9e4b12f898bf5123402551}\label{classbattery__control_1_1battery_a50811a8f0a9e4b12f898bf5123402551}} 
+{\bfseries moving}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class used to know where the robot should go next,  move the robot, and also update topolical location
+
+...
+Attributes ---------- 
+
+charging: bool
+When ruiquired by the /state_decision_maker node to charge, this value will be set to true, to inform run() to charge.
+
+moving: bool
+This is used to receive the command from /move. If control node says 'go', the robot will go even not fully charged.
+
+capacity: int
+Used to represent the current capacity of battery and will be published to onther node.
+
+
+Methods -------
+run():
+This funtion will publish the capacity of batttery to other node, if required to charge, charge action will executed.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbattery__control_1_1battery_a64477268cf6fdbab8782091703d475ca}\label{classbattery__control_1_1battery_a64477268cf6fdbab8782091703d475ca}} 
+\index{battery\_control.battery@{battery\_control.battery}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!battery\_control.battery@{battery\_control.battery}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def battery\+\_\+control.\+battery.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The constructor of class. Initializes parameters and publisher/suscriber\end{DoxyVerb}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattery__control_1_1battery_a64477268cf6fdbab8782091703d475ca_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbattery__control_1_1battery_aa4ef257cbbe0dbe4aee4d39e1ab16c14}\label{classbattery__control_1_1battery_aa4ef257cbbe0dbe4aee4d39e1ab16c14}} 
+\index{battery\_control.battery@{battery\_control.battery}!charge\_call\_back@{charge\_call\_back}}
+\index{charge\_call\_back@{charge\_call\_back}!battery\_control.battery@{battery\_control.battery}}
+\doxysubsubsection{\texorpdfstring{charge\_call\_back()}{charge\_call\_back()}}
+{\footnotesize\ttfamily def battery\+\_\+control.\+battery.\+charge\+\_\+call\+\_\+back (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The call back function of subscriber, when required to charge, self.charging wil be set to true.\end{DoxyVerb}
+ Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattery__control_1_1battery_aa4ef257cbbe0dbe4aee4d39e1ab16c14_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbattery__control_1_1battery_a36ace1714fad61b3e5d95400995e6b06}\label{classbattery__control_1_1battery_a36ace1714fad61b3e5d95400995e6b06}} 
+\index{battery\_control.battery@{battery\_control.battery}!control\_call\_back@{control\_call\_back}}
+\index{control\_call\_back@{control\_call\_back}!battery\_control.battery@{battery\_control.battery}}
+\doxysubsubsection{\texorpdfstring{control\_call\_back()}{control\_call\_back()}}
+{\footnotesize\ttfamily def battery\+\_\+control.\+battery.\+control\+\_\+call\+\_\+back (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The callback function of subscriber, when required to move, self.moving wil be set to true.\end{DoxyVerb}
+ Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattery__control_1_1battery_a36ace1714fad61b3e5d95400995e6b06_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbattery__control_1_1battery_a6207c8a2f67fd06952504509a4bcc83e}\label{classbattery__control_1_1battery_a6207c8a2f67fd06952504509a4bcc83e}} 
+\index{battery\_control.battery@{battery\_control.battery}!run@{run}}
+\index{run@{run}!battery\_control.battery@{battery\_control.battery}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def battery\+\_\+control.\+battery.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The core function of this class, This function will execute endlessly. When informed to charge, here will do the stuff 
+to charge the battery, and also simulate the consumption of battery.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{battery__control_8py}{battery\+\_\+control.\+py}}\end{DoxyCompactItemize}

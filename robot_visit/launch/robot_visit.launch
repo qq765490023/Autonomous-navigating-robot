@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+     <node name="build_map" pkg="robot_visit" type="build_map.py" output="screen"/>
+     <node name="State_decision_maker" pkg="robot_visit" type="state_decision_maker.py" output="screen"/>
+    <node name="Move" pkg="robot_visit" type="move.py" output="log"/>
+    <node name="Battery" pkg="robot_visit" type="battery_control.py" output="screen"/>
+</launch>
