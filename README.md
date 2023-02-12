@@ -1,9 +1,11 @@
-##author:
+## author:
 Zhouyang Hong
 s5197402
 
-##introduction:
+## introduction:
 This is the third assignment of the experimental robotics laboratory. The goal of this assignment is to achieve the autonomous navigation of a patrolling robot. The robot is able to automatically detect the markers and then construct a topological map then we use an additional library to enable the reasoning ability of the robot, and together with the state machine the robot autonomously navigates in the environment. 
+
+Documentation can be found at here: https://qq765490023.github.io/ERL-Ass2-documentation/index.html
 
 ![](assets/16762236749172.jpg)
 
@@ -14,7 +16,7 @@ This is the third assignment of the experimental robotics laboratory. The goal o
  
 Relevant concepts include ontology, stage-machine, ROS, Topological-map, and autonomous navigation.
 
-#Architecture
+## Architecture
 
 ![](assets/16762250330442.jpg)
 Above are the main classes for the implementation. Through next_go, the location the robot can go and also should go will be returned and strategies, batteries, control-state and ontology information are considered to make such a decision. Through move(L), robot will call the move to move to the target location, after arriving goal location, current location will be updated to ontology.
@@ -64,7 +66,7 @@ Below is with topics.
 
 
 
-##How to run
+## How to run
 Firstly, make sure that you have all 4 packages in this project properly installed which include: Aruco_ros, robot_vist, assignment2, armor.
 Then run those commands in different windows:
 
@@ -79,7 +81,7 @@ Then run those commands in different windows:
 
 Once the ontology file is mounted in "robot_visit" window, type "go" in "control.py" window, Then the robot will begin autonomously do everything.
 
-##Known issues:
+## Known issues:
     1.ARMORMainService needs to be restarted if robot_vist needs to be restarted.
     2. must send "stop" command in "control.py" window before we run "robot_visit" again.
     3. move_base must be launched after assignment.launch or the Gazebo will not be executed.
@@ -88,7 +90,7 @@ Once the ontology file is mounted in "robot_visit" window, type "go" in "control
 
 
 
-##Result:
+## Result:
 The following result is achieved and a video is provided and can be seen at here https://www.youtube.com/watch?v=YvU2GyUlNbU:
     1. Robot rotates on the original location and detects the makers on the boxes. 
     2. Aruco_ros subscribe to /image topic then publish the result to /makers topic.
@@ -97,15 +99,15 @@ The following result is achieved and a video is provided and can be seen at here
     5. Once arriving at a location, the robot rotates the camera to scan this place.
 
 
-##Working hypothesis and environment:
+## Working hypothesis and environment:
 #environment:
 ubuntu 20.04, ROS-neotic, python 3.8.5,
 
-##hypothesis
+## hypothesis
     1. Assuming that robot always starts with the same location that is surrounded by markers, because the robot need to detect markers and then build the topological map.
     2. Assuming that Aboxes and SWRL are provided in advance.
     
-##features:
+## features:
 
     1. Constantly visiting rooms while the nearest urgent rooms have the highest priority.  
     2. The robot tends to visit the room that it didn't visit for the longest time while under the condition that no room is urgent.
@@ -113,7 +115,7 @@ ubuntu 20.04, ROS-neotic, python 3.8.5,
     4. Build a topological map autonomously 
     5. Camera is able to be controlled to rotate and scan the environment
 
-##limtations:
+## limtations:
 
     1.No markers on boxes:
         Aruco_ros successfully received the image from /image topic, and the image is seen in rviz and publishes the detection result to robot_vist. 
@@ -121,7 +123,7 @@ ubuntu 20.04, ROS-neotic, python 3.8.5,
     2. Robot moves too slowly and is related to the consumption of hardware resources 
     3. The body of the robot will rotate when rotating the camera caused by the reaction force
     4. state-machine updates with the topological map instead of the real map.
-##Possible technical improvements
+## Possible technical improvements
     
     1. In aruco_ros markers_publisher, modify the current provided message {11,12,13,14,15,16,17} into the result detected when markers are labeled on boxes.
 
@@ -129,7 +131,7 @@ ubuntu 20.04, ROS-neotic, python 3.8.5,
     
     3. A proper threshold for reckoning battery_low is not decided. If the remaining battery is able to reach the place to charge and better make full use of the battery are things to be considered. 
 
-##Reference
+## Reference
     1. The first assignment: https://github.com/qq765490023/ERL-Ass1/tree/main/scripts
     2. The design of Aboxes is based on the following example. https://github.com/buoncubi/topological_map
     3. The design of the architecture referred to the following project: https://github.com/buoncubi/arch_skeleton
